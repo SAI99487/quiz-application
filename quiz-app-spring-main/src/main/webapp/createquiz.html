@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+</head>
+<body>
+    <h2>Create Quiz</h2>
+    <form action="quiz/create" method="post">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
+        
+        <label for="numQ">Number of Questions:</label>
+        <input type="number" id="numQ" name="numQ" required>
+        
+        <label for="title">Quiz Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <button type="submit">Create Quiz</button>
+    </form>
+</body>
+</html>
